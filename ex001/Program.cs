@@ -8,7 +8,7 @@ double[,] FillArray(int numLine, int numColumns)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)    
         {
-            matrix[i, j] = random.NextDouble()*10;      
+            matrix[i, j] = random.NextDouble()*30-10;      
         }
     }
     return matrix;
@@ -20,7 +20,7 @@ void PrintArray(double[,] matrix)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)  
         {
-            Console.Write($"{matrix[i, j]:F1}\t");
+            Console.Write("{0,8:F2}",matrix[i, j]);
         }
         Console.WriteLine();
     }
