@@ -8,7 +8,7 @@ double[,] FillArray(int numLine, int numColumns)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)    
         {
-            matrix[i, j] = random.NextDouble()*30-10;      
+            matrix[i, j] = random.NextDouble()*50-20;      
         }
     }
     return matrix;
