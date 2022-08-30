@@ -21,7 +21,9 @@ Console.WriteLine("Введите координаты");
 int numLine = Convert.ToInt32(Console.ReadLine());
 int numColumns = Convert.ToInt32(Console.ReadLine());
 if (line >= numLine && columns >= numColumns)
+{
     Console.WriteLine($"это -> {array[numLine - 1, numColumns - 1]}");
+}
 else
 {
     Console.WriteLine("Такого элемента нет");
